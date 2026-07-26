@@ -1,0 +1,111 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.app.dark {
+  background: #170b1f;
+  color: #dee4ed;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.page-card {
+  width: min(560px, 100%);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.dark .page-card {
+  background: #111827;
+  border-color: rgba(226, 232, 240, 0.08);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
+}
+
+.page-card h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.page-card p {
+  margin: 0 0 1.5rem;
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.dark .page-card p {
+  color: rgba(226, 232, 240, 0.78);
+}
+
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-field label {
+  font-weight: 600;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border-radius: 0.95rem;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.dark .form-field input {
+  background: #1f2937;
+  border-color: rgba(226, 232, 240, 0.12);
+  color: #e2e8f0;
+}
+
+.form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-action button {
+  border: none;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  padding: 0.95rem 1.4rem;
+  cursor: pointer;
+}
+
+.form-action button:hover {
+  background: #1d4ed8;
+}
+
+.form-footer {
+  margin-top: 1rem;
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.dark .form-footer {
+  color: rgba(226, 232, 240, 0.75);
+}
